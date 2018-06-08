@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "kong-plugin-hal"
-version = "1.0-4"
+version = "1.0-5"
 supported_platforms = {"linux", "macosx"}
 -- LuaDist source
 source = {
-  tag = "1.0-4",
+  tag = "1.0-5",
   url = "git://github.com/LuaDist-testing/kong-plugin-hal.git"
 }
 -- Original source
 -- source = {
 --   url = "git://github.com/Trust1Team/kong-plugin-hal",
---   tag = "1.0.4"
+--   tag = "1.0.5"
 -- }
 description = {
   summary = "The Kong HAL plugin.",
@@ -22,7 +22,8 @@ description = {
   ]],
 }
 dependencies = {
-  "lua ~> 5.1"
+  "lua ~> 5.1",
+  "dkjson ~> 2.5-2"
 }
 build = {
   type = "builtin",

@@ -1,10 +1,18 @@
+-- This file was automatically generated for the LuaDist project.
+
 package = "kong-plugin-hal"
-version = "1.0-5"
+version = "1.0-6"
 supported_platforms = {"linux", "macosx"}
+-- LuaDist source
 source = {
-  url = "git://github.com/Trust1Team/kong-plugin-hal",
-  tag = "1.0.5"
+  tag = "1.0-6",
+  url = "git://github.com/LuaDist-testing/kong-plugin-hal.git"
 }
+-- Original source
+-- source = {
+--   url = "git://github.com/Trust1Team/kong-plugin-hal",
+--   tag = "1.0.6"
+-- }
 description = {
   summary = "The Kong HAL plugin.",
   license = "MIT",
@@ -22,6 +30,7 @@ build = {
   modules = {
     ["kong.plugins.hal.handler"] = "src/handler.lua",
     ["kong.plugins.hal.schema"] = "src/schema.lua",
+    ["kong.plugins.hal.schema"] = "src/url.lua",
     ["kong.plugins.hal.body_filter"] = "src/body_filter.lua"
   }
 }
